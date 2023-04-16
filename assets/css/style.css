@@ -1,0 +1,76 @@
+.circulo {
+    height: 30px;
+    width: 30px;
+    background: rgba(128, 128, 128, 0.199);
+    clip-path: circle(7px);
+}
+
+.productos {
+    letter-spacing: 10px;
+}
+
+.bg-oferta {
+    background: #2ECB70;
+}
+
+.titulo {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.subtitulo {
+    font-size: 1.4rem;
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    margin-left: 15%;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #2ECB70;
+}
+
+label {
+    color: #E3CA33;
+    font-weight: bold;
+}
+
+.bg-blue {
+    background-color: #2C3D4F;
+}
+
+.text-link {
+    color: #2E9085;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+
+.text-link::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #2E9085;
+    bottom: 0;
+    left: 30%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.text-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.text-link:hover {
+    --underline-width: 100%;
+    color: #2E9085;
+}
+
+.banner-azul {
+    height: 100px;
+}
