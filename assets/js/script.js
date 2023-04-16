@@ -1,8 +1,19 @@
 let tyc = document.getElementById('tyc');
-tyc.addEventListener('click', () => {
+let submitButton = document.getElementById('submitBtn');
+let codDcto = document.getElementById('codDcto');
+
+let obtenerDescuento = () => {
+	codDcto.classList.remove('d-none');
+};
+submitButton.addEventListener('click', () => {
+	// 'tyc.checked' Comprueba que checkbox esté marcado
 	if (tyc.checked) {
-		alert('checked');
+		obtenerDescuento();
 	} else {
-		alert('unchecked');
+		// Metodo de Bootstrap para mostrar modal
+		myModal.show();
 	}
 });
+
+// MODAL
+const myModal = new bootstrap.Modal(document.getElementById('myModal'));
